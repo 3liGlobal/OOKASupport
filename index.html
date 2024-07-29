@@ -42,51 +42,32 @@
           <!---------template Container Starts Here---------->
           <div class="zf-subContWrap zf-topAlign">
             <ul>
-              <div class="one-line">
+              <div class="">
                 <!---------Single Line Starts Here---------->
-                <li class="zf-tempFrmWrapper zf-large wid">
-                  <label class="zf-labelName">
-                    Name
-                    <em class="zf-important">*</em>
-                  </label>
-                  <div class="zf-tempContDiv">
-                    <span>
-                      <input
+                <li>
+                  <div class="zf-tempContDiv one-line">
+                    <span class="zf-tempFrmWrapper zf-large wid">
+                      <label class="zf-labelName">First Name</label
+                      ><input
                         type="text"
-                        name="SingleLine"
-                        checktype="c1"
-                        value=""
                         maxlength="255"
-                        fieldType="1"
+                        name="Name_First"
+                        fieldType="7"
                         placeholder=""
-                    /></span>
+                      />
+                    </span>
+                    <span class="zf-tempFrmWrapper zf-large wid">
+                      <label class="zf-labelName">Last Name</label
+                      ><input
+                        type="text"
+                        maxlength="255"
+                        name="Name_Last"
+                        fieldType="7"
+                        placeholder=""
+                      />
+                    </span>
                     <p
                       id="SingleLine_error"
-                      class="zf-errorMessage"
-                      style="display: none"
-                    >
-                      Invalid value
-                    </p>
-                  </div>
-                  <div class="zf-clearBoth"></div>
-                </li>
-                <!---------Single Line Ends Here---------->
-                <!---------Single Line Starts Here---------->
-                <li class="zf-tempFrmWrapper zf-large wid">
-                  <label class="zf-labelName"> Order Number </label>
-                  <div class="zf-tempContDiv">
-                    <span>
-                      <input
-                        type="text"
-                        name="SingleLine1"
-                        checktype="c1"
-                        value=""
-                        maxlength="255"
-                        fieldType="1"
-                        placeholder=""
-                    /></span>
-                    <p
-                      id="SingleLine1_error"
                       class="zf-errorMessage"
                       style="display: none"
                     >
@@ -126,6 +107,33 @@
                   <div class="zf-clearBoth"></div>
                 </li>
                 <!---------Email Ends Here---------->
+                <!---------Single Line Starts Here---------->
+                <li class="zf-tempFrmWrapper zf-large wid">
+                  <label class="zf-labelName"> Order Number </label>
+                  <div class="zf-tempContDiv">
+                    <span>
+                      <input
+                        type="text"
+                        name="SingleLine1"
+                        checktype="c1"
+                        value=""
+                        maxlength="255"
+                        fieldType="1"
+                        placeholder=""
+                    /></span>
+                    <p
+                      id="SingleLine1_error"
+                      class="zf-errorMessage"
+                      style="display: none"
+                    >
+                      Invalid value
+                    </p>
+                  </div>
+                  <div class="zf-clearBoth"></div>
+                </li>
+                <!---------Single Line Ends Here---------->
+              </div>
+              <div class="one-line">
                 <!---------Phone Starts Here---------->
                 <li class="zf-tempFrmWrapper zf-large wid">
                   <label class="zf-labelName"> Phone</label>
@@ -160,142 +168,7 @@
                   </div>
                   <div class="zf-clearBoth"></div>
                 </li>
-              </div>
-              <div class="one-line">
                 <!---------Phone Ends Here---------->
-                <!---------Dropdown Starts Here---------->
-                <li class="zf-tempFrmWrapper zf-large wid">
-                  <label class="zf-labelName"> Reason of Contact </label>
-                  <div class="zf-tempContDiv">
-                    <select class="zf-form-sBox" name="Dropdown" checktype="c1">
-                      <option selected="true" value="-Select-">-Select-</option>
-                      <optgroup label="Account Issue">
-                        <option value="Update&#x20;Account&#x20;Information">
-                          Update&#x20;Account&#x20;Information
-                        </option>
-                        <option value="Forgot&#x20;Password">
-                          Forgot&#x20;Password
-                        </option>
-                        <option value="Other&#x20;Login&#x20;Issue">
-                          Other&#x20;Login&#x20;Issue
-                        </option>
-                      </optgroup>
-                      <optgroup label="Cancel / Modify Existing Order">
-                        <option value="Order&#x20;Cancellation&#x20;Request">
-                          Order&#x20;Cancellation&#x20;Request
-                        </option>
-                        <option value="Modify&#x20;Order&#x20;Request">
-                          Modify&#x20;Order&#x20;Request
-                        </option>
-                        <option value="Modify&#x20;Address&#x20;Request">
-                          Modify&#x20;Address&#x20;Request
-                        </option>
-                        <option
-                          value="Modify&#x20;Shipping&#x20;Method&#x20;Request"
-                        >
-                          Modify&#x20;Shipping&#x20;Method&#x20;Request
-                        </option>
-                      </optgroup>
-                      <optgroup label="International Inquiry">
-                        <option value="International&#x20;Returns">
-                          International&#x20;Returns
-                        </option>
-                        <option value="International&#x20;Refused&#x20;Package">
-                          International&#x20;Refused&#x20;Package
-                        </option>
-                        <option value="International&#x20;Shipping">
-                          International&#x20;Shipping
-                        </option>
-                        <option value="Other">Other</option>
-                      </optgroup>
-                      <optgroup label="Order Issue">
-                        <option value="Defective&#x20;Item">
-                          Defective&#x20;Item
-                        </option>
-                        <option value="Missing&#x20;Item">
-                          Missing&#x20;Item
-                        </option>
-                        <option value="Wrong&#x20;Item">Wrong&#x20;Item</option>
-                        <option value="Payment&#x20;Issue">
-                          Payment&#x20;Issue
-                        </option>
-                        <option value="Product&#x20;Assembly">
-                          Product&#x20;Assembly
-                        </option>
-                        <option value="Damaged&#x20;Item">
-                          Damaged&#x20;Item
-                        </option>
-                        <option value="Lost&#x20;Package">
-                          Lost&#x20;Package
-                        </option>
-                        <option value="Other">Other</option>
-                      </optgroup>
-                      <optgroup label="Order Status">
-                        <option value="Order&#x20;Status&#x20;Inquiry">
-                          Order&#x20;Status&#x20;Inquiry
-                        </option>
-                        <option value="Tracking&#x20;Information">
-                          Tracking&#x20;Information
-                        </option>
-                      </optgroup>
-                      <optgroup label="Returns / Exchange Request">
-                        <option value="Domestic&#x20;Return&#x20;Request">
-                          Domestic&#x20;Return&#x20;Request
-                        </option>
-                        <option value="International&#x20;Return&#x20;Request">
-                          International&#x20;Return&#x20;Request
-                        </option>
-                      </optgroup>
-                      <optgroup label="Technical Support">
-                        <option value="Login&#x20;Issue">
-                          Login&#x20;Issue
-                        </option>
-                        <option value="Payment&#x20;Issue">
-                          Payment&#x20;Issue
-                        </option>
-                        <option value="Promo&#x20;Code&#x20;Issue">
-                          Promo&#x20;Code&#x20;Issue
-                        </option>
-                        <option value="Website&#x20;Issue">
-                          Website&#x20;Issue
-                        </option>
-                        <option value="Other">Other</option>
-                      </optgroup>
-                      <optgroup label="Wholesale Inquiry">
-                        <option value="Wholesale&#x20;Account&#x20;Information">
-                          Wholesale&#x20;Account&#x20;Information
-                        </option>
-                      </optgroup>
-                      <optgroup label="General Inquiries">
-                        <option value="Product&#x20;Assembly">
-                          Product&#x20;Assembly
-                        </option>
-                        <option value="Affiliate&#x20;Information&#x20;Request">
-                          Affiliate&#x20;Information&#x20;Request
-                        </option>
-                        <option value="Marketing&#x20;Inquiry">
-                          Marketing&#x20;Inquiry
-                        </option>
-                        <option value="Product&#x20;Request">
-                          Product&#x20;Request
-                        </option>
-                        <option value="Vendor&#x20;Inquiry">
-                          Vendor&#x20;Inquiry
-                        </option>
-                        <option value="Other">Other</option>
-                      </optgroup>
-                    </select>
-                    <p
-                      id="Dropdown_error"
-                      class="zf-errorMessage"
-                      style="display: none"
-                    >
-                      Invalid value
-                    </p>
-                  </div>
-                  <div class="zf-clearBoth"></div>
-                </li>
-                <!---------Dropdown Ends Here---------->
                 <!---------Single Line Starts Here---------->
                 <li class="zf-tempFrmWrapper zf-large wid">
                   <label class="zf-labelName">
@@ -325,6 +198,137 @@
                 </li>
               </div>
               <!---------Single Line Ends Here---------->
+              <!---------Dropdown Starts Here---------->
+              <li class="zf-tempFrmWrapper zf-large">
+                <label class="zf-labelName"> Reason of Contact </label>
+                <div class="zf-tempContDiv">
+                  <select class="zf-form-sBox" name="Dropdown" checktype="c1">
+                    <option selected="true" value="-Select-">-Select-</option>
+                    <optgroup label="Account Issue">
+                      <option value="Update&#x20;Account&#x20;Information">
+                        Update&#x20;Account&#x20;Information
+                      </option>
+                      <option value="Forgot&#x20;Password">
+                        Forgot&#x20;Password
+                      </option>
+                      <option value="Other&#x20;Login&#x20;Issue">
+                        Other&#x20;Login&#x20;Issue
+                      </option>
+                    </optgroup>
+                    <optgroup label="Cancel / Modify Existing Order">
+                      <option value="Order&#x20;Cancellation&#x20;Request">
+                        Order&#x20;Cancellation&#x20;Request
+                      </option>
+                      <option value="Modify&#x20;Order&#x20;Request">
+                        Modify&#x20;Order&#x20;Request
+                      </option>
+                      <option value="Modify&#x20;Address&#x20;Request">
+                        Modify&#x20;Address&#x20;Request
+                      </option>
+                      <option
+                        value="Modify&#x20;Shipping&#x20;Method&#x20;Request"
+                      >
+                        Modify&#x20;Shipping&#x20;Method&#x20;Request
+                      </option>
+                    </optgroup>
+                    <optgroup label="International Inquiry">
+                      <option value="International&#x20;Returns">
+                        International&#x20;Returns
+                      </option>
+                      <option value="International&#x20;Refused&#x20;Package">
+                        International&#x20;Refused&#x20;Package
+                      </option>
+                      <option value="International&#x20;Shipping">
+                        International&#x20;Shipping
+                      </option>
+                      <option value="Other">Other</option>
+                    </optgroup>
+                    <optgroup label="Order Issue">
+                      <option value="Defective&#x20;Item">
+                        Defective&#x20;Item
+                      </option>
+                      <option value="Missing&#x20;Item">
+                        Missing&#x20;Item
+                      </option>
+                      <option value="Wrong&#x20;Item">Wrong&#x20;Item</option>
+                      <option value="Payment&#x20;Issue">
+                        Payment&#x20;Issue
+                      </option>
+                      <option value="Product&#x20;Assembly">
+                        Product&#x20;Assembly
+                      </option>
+                      <option value="Damaged&#x20;Item">
+                        Damaged&#x20;Item
+                      </option>
+                      <option value="Lost&#x20;Package">
+                        Lost&#x20;Package
+                      </option>
+                      <option value="Other">Other</option>
+                    </optgroup>
+                    <optgroup label="Order Status">
+                      <option value="Order&#x20;Status&#x20;Inquiry">
+                        Order&#x20;Status&#x20;Inquiry
+                      </option>
+                      <option value="Tracking&#x20;Information">
+                        Tracking&#x20;Information
+                      </option>
+                    </optgroup>
+                    <optgroup label="Returns / Exchange Request">
+                      <option value="Domestic&#x20;Return&#x20;Request">
+                        Domestic&#x20;Return&#x20;Request
+                      </option>
+                      <option value="International&#x20;Return&#x20;Request">
+                        International&#x20;Return&#x20;Request
+                      </option>
+                    </optgroup>
+                    <optgroup label="Technical Support">
+                      <option value="Login&#x20;Issue">Login&#x20;Issue</option>
+                      <option value="Payment&#x20;Issue">
+                        Payment&#x20;Issue
+                      </option>
+                      <option value="Promo&#x20;Code&#x20;Issue">
+                        Promo&#x20;Code&#x20;Issue
+                      </option>
+                      <option value="Website&#x20;Issue">
+                        Website&#x20;Issue
+                      </option>
+                      <option value="Other">Other</option>
+                    </optgroup>
+                    <optgroup label="Wholesale Inquiry">
+                      <option value="Wholesale&#x20;Account&#x20;Information">
+                        Wholesale&#x20;Account&#x20;Information
+                      </option>
+                    </optgroup>
+                    <optgroup label="General Inquiries">
+                      <option value="Product&#x20;Assembly">
+                        Product&#x20;Assembly
+                      </option>
+                      <option value="Affiliate&#x20;Information&#x20;Request">
+                        Affiliate&#x20;Information&#x20;Request
+                      </option>
+                      <option value="Marketing&#x20;Inquiry">
+                        Marketing&#x20;Inquiry
+                      </option>
+                      <option value="Product&#x20;Request">
+                        Product&#x20;Request
+                      </option>
+                      <option value="Vendor&#x20;Inquiry">
+                        Vendor&#x20;Inquiry
+                      </option>
+                      <option value="Other">Other</option>
+                    </optgroup>
+                  </select>
+                  <p
+                    id="Dropdown_error"
+                    class="zf-errorMessage"
+                    style="display: none"
+                  >
+                    Invalid value
+                  </p>
+                </div>
+                <div class="zf-clearBoth"></div>
+              </li>
+              <!---------Dropdown Ends Here---------->
               <!---------Multiple Line Starts Here---------->
               <li class="zf-tempFrmWrapper zf-large">
                 <label class="zf-labelName"> Message </label>
