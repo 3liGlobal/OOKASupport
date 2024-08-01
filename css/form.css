@@ -1153,7 +1153,23 @@ select:focus-visible {
 }
 .one-line {
   display: flex;
+  flex-direction: row;
 }
 .wid {
   width: 50%;
+}
+@media only screen and (max-width: 600px) {
+  .one-line {
+    flex-direction: column;
+  }
+  .wid {
+    width: 100%;
+  }
+  .zf-tempFrmWrapper {
+    padding: 0px;
+    padding-bottom: 20px;
+  }
+  .zf-subContWrap {
+    margin: 20px;
+  }
 }
