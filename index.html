@@ -1,6 +1,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OOKA&#x20;Support&#x20;Form</title>
     <link href="css/form.css" rel="stylesheet" type="text/css" />
     <script src="js/validation.js"></script>
@@ -47,7 +48,8 @@
                 <li>
                   <div class="zf-tempContDiv one-line">
                     <span class="zf-tempFrmWrapper zf-large wid">
-                      <label class="zf-labelName">First Name</label
+                      <label class="zf-labelName"
+                        >First Name <em class="zf-important">*</em></label
                       ><input
                         type="text"
                         maxlength="255"
@@ -57,7 +59,8 @@
                       />
                     </span>
                     <span class="zf-tempFrmWrapper zf-large wid">
-                      <label class="zf-labelName">Last Name</label
+                      <label class="zf-labelName"
+                        >Last Name <em class="zf-important">*</em></label
                       ><input
                         type="text"
                         maxlength="255"
@@ -65,14 +68,14 @@
                         fieldType="7"
                         placeholder=""
                       />
+                      <p
+                        id="Name_error"
+                        class="zf-errorMessage"
+                        style="display: none"
+                      >
+                        Invalid value
+                      </p>
                     </span>
-                    <p
-                      id="SingleLine_error"
-                      class="zf-errorMessage"
-                      style="display: none"
-                    >
-                      Invalid value
-                    </p>
                   </div>
                   <div class="zf-clearBoth"></div>
                 </li>
@@ -369,9 +372,10 @@
       var zf_DateRegex = new RegExp(
         "^(([0][1-9])|([1-2][0-9])|([3][0-1]))[-](Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)[-](?:(?:19|20)[0-9]{2})$"
       );
-      var zf_MandArray = ["SingleLine", "Email", "SingleLine2"];
+      var zf_MandArray = ["Name_Last", "Email", "SingleLine2"];
       var zf_FieldArray = [
-        "SingleLine",
+        "Name_First",
+        "Name_Last",
         "SingleLine1",
         "Email",
         "PhoneNumber_countrycode",
