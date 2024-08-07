@@ -88,6 +88,7 @@ body {
   margin: 0 auto;
   border: 1px solid;
   border-color: #e5e5e3;
+  padding: 0px 2rem;
 }
 
 input,
@@ -1169,5 +1170,16 @@ select:focus-visible {
   }
   .mess {
     margin: 20px;
+  }
+  .zf-tempContDiv input[type="text"],
+  .zf-tempContDiv textarea,
+  .zf-tempContDiv .zf-pdfTextArea {
+    padding: 16px;
+  }
+  .zf-tempContDiv textarea {
+    height: 120px;
+  }
+  body {
+    padding: 0px;
   }
 }
