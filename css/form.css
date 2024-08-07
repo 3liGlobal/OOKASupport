@@ -733,8 +733,20 @@ select:focus-visible {
 }
 .zf-large .zf-tempContDiv .zf-form-sBox {
   width: 100%;
+  appearance: none;
 }
+select {
+  padding: 10px;
+  padding-right: 30px;
 
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("https://25636661.fs1.hubspotusercontent-eu1.net/hubfs/25636661/arrow-205.svg");
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 1.2rem auto, 100%;
+}
 .zf-name .zf-tempContDiv .zf-form-sBox {
   width: 100%;
 }
