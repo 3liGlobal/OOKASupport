@@ -1,5 +1,6 @@
 /* $Id: $ */
 @charset "UTF-8";
+
 html,
 body,
 div,
@@ -100,9 +101,12 @@ button {
   outline: none;
   margin: 0 auto;
   padding: 5px 10px;
-  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box; /* Firefox, other Gecko */
-  box-sizing: border-box; /* Opera/IE 8+ */
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
 }
 
 img,
@@ -112,60 +116,77 @@ a {
   color: #3a6cae;
   text-decoration: none;
 }
+
 img,
 a:hover {
   text-decoration: underline;
 }
+
 .zf-flLeft {
   float: left;
 }
+
 .zf-flRight {
   float: right;
 }
+
 .zf-clearBoth {
   clear: both;
 }
+
 ol,
 ul {
   list-style: none outside none;
 }
+
 .zf-normalText {
   font-size: 13px;
   line-height: 1.5;
 }
+
 .zf-smallText {
   font-size: 0.9em;
   font-weight: normal;
 }
+
 .zf-smallHeading {
   font-size: 18px;
 }
+
 .zf-heading {
   font-size: 2em;
 }
+
 .zf-subHeading {
   font-size: 1.5em;
 }
+
 .zf-boldText,
 .zf-boldText a {
   font-weight: bold;
   text-decoration: none;
 }
+
 .zf-italicText {
   font-style: italic;
 }
+
 .zf-heading a {
   text-decoration: underline;
 }
+
 .zf-heading a:hover {
   text-decoration: none;
 }
+
 .zf-blodText {
   font-weight: bold;
 }
+
 .zf-overAuto {
   overflow: auto;
 }
+
 .zf-split {
   color: #8b9193;
   padding: 0 3px;
@@ -210,6 +231,7 @@ ul {
 .zf-tempContDiv textarea:hover {
   border: 1px solid rgba(157, 157, 157, 0.75) !important;
 }
+
 .zf-tempContDiv input[type="text"]:focus,
 .zf-tempContDiv textarea:focus {
   border: 1px solid rgb(0 0 0 / 75%) !important;
@@ -217,6 +239,7 @@ ul {
   -moz-box-shadow: 0 0 5px rgba(82, 168, 236, 0.5) !important;
   box-shadow: 0 0 5px rgb(0 4 6 / 50%) !important;
 }
+
 select:focus-visible {
   outline: none;
   border: 1px solid rgb(0 0 0 / 75%) !important;
@@ -224,13 +247,16 @@ select:focus-visible {
   -moz-box-shadow: 0 0 5px rgba(82, 168, 236, 0.5) !important;
   box-shadow: 0 0 5px rgb(0 4 6 / 50%) !important;
 }
+
 .zf-tempContDiv textarea {
   height: 220px;
 }
+
 .arrangeAddress .zf-addrCont span.zf-addtwo {
   width: 99% !important;
   float: none !important;
 }
+
 /**********Error Message***********/
 .zf-errorMessage {
   font: 12px Arial, Helvetica, sans-serif;
@@ -277,6 +303,7 @@ select:focus-visible {
 .zf-tempHeadContBdr {
   margin: 15px;
 }
+
 .zf-tempHeadContBdr .zf-frmTitle {
   color: #000000;
   margin: 0;
@@ -284,6 +311,7 @@ select:focus-visible {
   font-size: 2em;
   font-weight: 500;
 }
+
 .zf-tempHeadContBdr .zf-frmDesc {
   color: #dddddd;
   font-size: 14px;
@@ -315,6 +343,7 @@ select:focus-visible {
   font-size: 14px;
   color: #444;
 }
+
 .zf-form-sBox {
   font-family: "Roboto";
   padding: 15px;
@@ -334,13 +363,16 @@ select:focus-visible {
   margin-bottom: 5px;
   margin-left: 4%;
 }
+
 .zf-name .zf-tempContDiv span.last {
   margin-right: 0;
 }
+
 .zf-name .zf-tempContDiv span label {
   display: block;
   padding-top: 3px;
 }
+
 .zf-name .zf-tempContDiv input[type="text"] {
   width: 100%;
 }
@@ -354,6 +386,7 @@ select:focus-visible {
   font-size: 11px;
   padding-top: 3px;
 }
+
 .zf-phone .zf-tempContDiv label,
 .zf-date .zf-tempContDiv label,
 .zf-time .zf-tempContDiv label,
@@ -361,11 +394,13 @@ select:focus-visible {
 .zf-name .zf-tempContDiv span label {
   color: #888888;
 }
+
 .zf-phone .zf-tempContDiv span label {
   display: block;
   padding-top: 3px;
   text-align: center;
 }
+
 .zf-phone .zf-tempContDiv .zf-symbols {
   padding-top: 5px;
 }
@@ -373,10 +408,12 @@ select:focus-visible {
 .zf-currency .zf-tempContDiv span {
   display: inline-block;
 }
+
 .zf-currency .zf-tempContDiv span label {
   display: block;
   padding-top: 3px;
 }
+
 .zf-currency .zf-tempContDiv .zf-symbol {
   font-size: 14px;
   margin-left: 5px;
@@ -389,6 +426,7 @@ select:focus-visible {
   width: 100% !important;
   margin-top: 4px;
 }
+
 .zf-decesion input[type="checkbox"] {
   display: block;
   height: 13px;
@@ -398,6 +436,7 @@ select:focus-visible {
   float: left;
   margin-top: 4px;
 }
+
 .zf-decesion label {
   display: block;
   line-height: 21px;
@@ -441,14 +480,17 @@ select:focus-visible {
 .zf-geolocation .zf-tempContDiv .zf-addOne input {
   width: 98%;
 }
+
 .zf-address .zf-tempContDiv span.zf-addtwo,
 .zf-geolocation .zf-tempContDiv span.zf-addtwo {
   width: 48%;
 }
+
 .zf-address .zf-tempContDiv span.zf-addtwo input,
 .zf-geolocation .zf-tempContDiv span.zf-addtwo input {
   width: 99%;
 }
+
 .zf-address .zf-tempContDiv span.zf-addtwo .zf-form-sBox {
   width: 100%;
 }
@@ -458,11 +500,13 @@ select:focus-visible {
   padding: 0;
   width: 100%;
 }
+
 .zf-signContainer canvas {
   cursor: crosshair;
   border: 1px solid #ccc;
   background: #fff;
 }
+
 .zf-signContainer a {
   font-size: 11px;
   text-decoration: underline;
@@ -477,6 +521,7 @@ select:focus-visible {
   font-family: "Roboto", sans-serif;
   padding-bottom: 10px;
 }
+
 .zf-section p {
   color: #847f7f;
   margin-top: 10px;
@@ -485,6 +530,7 @@ select:focus-visible {
 .zf-note .zf-labelName {
   padding-top: 7px;
 }
+
 .zf-templateWrapper .zf-note {
   overflow: hidden;
 }
@@ -498,6 +544,7 @@ select:focus-visible {
 .zf-subDate {
   margin-right: 10px;
 }
+
 .zf-subDate label {
   text-align: left !important;
 }
@@ -537,6 +584,7 @@ select:focus-visible {
   float: left;
   display: block;
 }
+
 .zf-sideBySide .zf-tempContDiv span input[type="checkbox"] {
   display: block;
   width: 13px;
@@ -545,6 +593,7 @@ select:focus-visible {
   margin-top: 3px;
   float: left;
 }
+
 .zf-sideBySide .zf-tempContDiv span input[type="radio"] {
   display: block;
   width: 13px;
@@ -553,6 +602,7 @@ select:focus-visible {
   padding: 0;
   float: left;
 }
+
 .zf-sideBySide .zf-tempContDiv span label {
   line-height: 21px;
   display: block;
@@ -567,6 +617,7 @@ select:focus-visible {
   display: block;
   clear: both;
 }
+
 .zf-oneColumns .zf-tempContDiv span:last-child {
   margin-bottom: 0;
 }
@@ -580,6 +631,7 @@ select:focus-visible {
   margin-top: 3px;
   float: left;
 }
+
 .zf-oneColumns .zf-tempContDiv span input[type="radio"] {
   display: block;
   width: 13px;
@@ -588,6 +640,7 @@ select:focus-visible {
   padding: 0;
   float: left;
 }
+
 .zf-oneColumns .zf-tempContDiv span label {
   line-height: 19px;
   display: block;
@@ -595,12 +648,14 @@ select:focus-visible {
   padding: 0;
   font-size: 13px;
 }
+
 .zf-twoColumns .zf-tempContDiv span {
   margin: 0 5px 13px 0;
   width: 48%;
   float: left;
   display: block;
 }
+
 .zf-twoColumns .zf-tempContDiv span input[type="checkbox"] {
   display: block;
   width: 13px;
@@ -610,6 +665,7 @@ select:focus-visible {
   margin-top: 3px;
   float: left;
 }
+
 .zf-twoColumns .zf-tempContDiv span input[type="radio"] {
   display: block;
   width: 13px;
@@ -618,17 +674,20 @@ select:focus-visible {
   padding: 0;
   float: left;
 }
+
 .zf-twoColumns .zf-tempContDiv span label {
   line-height: 21px;
   display: block;
   margin: 0 0 0 20px;
   padding: 0 0 5px;
 }
+
 .zf-threeColumns .zf-tempContDiv span {
   margin: 0 5px 13px 0;
   width: 30%;
   float: left;
 }
+
 .zf-threeColumns .zf-tempContDiv span input[type="checkbox"] {
   display: block;
   width: 13px;
@@ -637,6 +696,7 @@ select:focus-visible {
   margin-top: 3px;
   float: left;
 }
+
 .zf-threeColumns .zf-tempContDiv span input[type="radio"] {
   display: block;
   width: 13px;
@@ -645,6 +705,7 @@ select:focus-visible {
   padding: 0;
   float: left;
 }
+
 .zf-threeColumns .zf-tempContDiv span label {
   line-height: 21px;
   display: block;
@@ -705,6 +766,7 @@ select:focus-visible {
 .zf-small .zf-signContainer {
   width: 50%;
 }
+
 .zf-medium .zf-tempContDiv input[type="text"],
 .zf-medium .zf-tempContDiv textarea,
 .zf-medium .zf-mSelect select,
@@ -713,6 +775,7 @@ select:focus-visible {
 .zf-medium .zf-signContainer {
   width: 75%;
 }
+
 .zf-large .zf-tempContDiv input[type="text"],
 .zf-large .zf-tempContDiv textarea,
 .zf-large .zf-mSelect select,
@@ -721,6 +784,7 @@ select:focus-visible {
 .zf-large .zf-signContainer {
   width: 100%;
 }
+
 .signContainer canvas {
   width: 100%;
 }
@@ -728,13 +792,16 @@ select:focus-visible {
 .zf-small .zf-tempContDiv .zf-form-sBox {
   width: 50%;
 }
+
 .zf-medium .zf-tempContDiv .zf-form-sBox {
   width: 75%;
 }
+
 .zf-large .zf-tempContDiv .zf-form-sBox {
   width: 100%;
   appearance: none;
 }
+
 select {
   padding: 10px;
   padding-right: 30px;
@@ -747,6 +814,7 @@ select {
   background-position: right 0.7em top 50%, 0 0;
   background-size: 1.2rem auto, 100%;
 }
+
 .zf-name .zf-tempContDiv .zf-form-sBox {
   width: 100%;
 }
@@ -754,6 +822,7 @@ select {
 .zf-namesmall .zf-nameWrapper {
   width: 50%;
 }
+
 .zf-namesmall .zf-tempContDiv span {
   width: 48%;
 }
@@ -761,6 +830,7 @@ select {
 .zf-namesmall .zf-oneType .zf-salutationWrapper span {
   width: 63%;
 }
+
 .zf-namesmall .zf-oneType .zf-salutationWrapper .zf-salutation {
   width: 33%;
 }
@@ -769,6 +839,7 @@ select {
   width: 34%;
   margin-left: 3%;
 }
+
 .zf-namesmall .zf-twoType .zf-salutationWrapper .zf-salutation {
   width: 26%;
 }
@@ -784,6 +855,7 @@ select {
   float: none;
   margin-left: 0;
 }
+
 .zf-namesmall .zf-threeType .zf-salutationWrapper .zf-salutation {
   width: 50%;
 }
@@ -799,12 +871,9 @@ select {
   float: none;
   margin-left: 0;
 }
+
 .zf-leftAlign .zf-namesmall .zf-threeType .zf-salutationWrapper .zf-salutation,
-.zf-rightAlign
-  .zf-namesmall
-  .zf-threeType
-  .zf-salutationWrapper
-  .zf-salutation {
+.zf-rightAlign .zf-namesmall .zf-threeType .zf-salutationWrapper .zf-salutation {
   width: 50%;
 }
 
@@ -820,6 +889,7 @@ select {
 .zf-namemedium .zf-oneType .zf-salutationWrapper span {
   width: 73%;
 }
+
 .zf-namemedium .zf-oneType .zf-salutationWrapper .zf-salutation {
   width: 25%;
 }
@@ -828,6 +898,7 @@ select {
   width: 38%;
   margin-left: 2%;
 }
+
 .zf-namemedium .zf-twoType .zf-salutationWrapper .zf-salutation {
   width: 20%;
 }
@@ -856,10 +927,12 @@ select {
   margin-right: 0;
   margin-bottom: 0;
 }
+
 .zf-namelarge .zf-twoType .zf-nameWrapper span {
   width: 49%;
   margin-left: 2%;
 }
+
 .zf-namelarge .zf-threeType .zf-nameWrapper span {
   width: 32%;
   margin-left: 2%;
@@ -869,6 +942,7 @@ select {
   width: 40%;
   margin-left: 2%;
 }
+
 .zf-namelarge .zf-twoType .zf-salutationWrapper .zf-salutation {
   width: 16%;
 }
@@ -877,6 +951,7 @@ select {
   width: 26%;
   margin-left: 2%;
 }
+
 .zf-namelarge .zf-threeType .zf-salutationWrapper .zf-salutation {
   width: 16%;
 }
@@ -885,6 +960,7 @@ select {
   width: 73%;
   margin-left: 2%;
 }
+
 .zf-namelarge .zf-oneType .zf-salutationWrapper .zf-salutation {
   width: 25%;
 }
@@ -896,9 +972,11 @@ select {
 .zf-csmall .zf-tempContDiv input[type="text"] {
   width: 43%;
 }
+
 .zf-cmedium .zf-tempContDiv input[type="text"] {
   width: 67%;
 }
+
 .zf-clarge .zf-tempContDiv input[type="text"] {
   width: 91%;
 }
@@ -906,9 +984,11 @@ select {
 .zf-nsmall .zf-tempContDiv input[type="text"] {
   width: 50%;
 }
+
 .zf-nmedium .zf-tempContDiv input[type="text"] {
   width: 75%;
 }
+
 .zf-nlarge .zf-tempContDiv input[type="text"] {
   width: 100%;
 }
@@ -916,9 +996,11 @@ select {
 .zf-signSmall .zf-tempContDiv .zf-signContainer .zf-signArea {
   width: 49%;
 }
+
 .zf-signMedium .zf-tempContDiv .zf-signContainer .zf-signArea {
   width: 60%;
 }
+
 .zf-signLarge .zf-tempContDiv .zf-signContainer .zf-signArea {
   width: 74%;
 }
@@ -926,9 +1008,11 @@ select {
 .zf-addrsmall .zf-tempContDiv .zf-addrCont {
   width: 50%;
 }
+
 .zf-addrmedium .zf-tempContDiv .zf-addrCont {
   width: 75%;
 }
+
 .zf-addrlarge .zf-tempContDiv .zf-addrCont {
   width: 100%;
 }
@@ -950,12 +1034,14 @@ select {
 .zf-leftAlign {
   display: block;
 }
+
 .zf-leftAlign .zf-tempFrmWrapper .zf-labelName {
   float: left;
   width: 30%;
   line-height: 20px;
   margin-right: 15px;
 }
+
 .zf-leftAlign .zf-tempFrmWrapper .zf-tempContDiv {
   margin-left: 35%;
 }
@@ -972,6 +1058,7 @@ select {
 .zf-rightAlign {
   display: block;
 }
+
 .zf-rightAlign .zf-tempFrmWrapper .zf-labelName {
   float: left;
   width: 30%;
@@ -979,31 +1066,38 @@ select {
   text-align: right;
   margin-right: 15px;
 }
+
 .zf-rightAlign .zf-tempFrmWrapper .zf-tempContDiv {
   margin-left: 35%;
 }
+
 .zf-matrixTable {
   font-size: 13px;
   overflow-x: scroll;
   padding-bottom: 15px !important;
 }
+
 .zf-matrixTable table th,
 .zf-matrixTable table td {
   padding: 10px;
 }
+
 .zf-matrixTable thead th,
 .zf-matrixTable table td {
   text-align: center;
 }
+
 .zf-matrixTable table td input[type="radio"],
 .zf-matrixTable table td input[type="checkbox"] {
   display: inline-block;
 }
+
 .zf-matrixTable tbody th {
   font-weight: normal;
   font-size: 13px;
   text-align: left;
 }
+
 .zf-matrixTable thead th {
   font-weight: 600;
   font-size: 13px;
@@ -1015,6 +1109,7 @@ select {
   margin: 0;
   padding: 0;
 }
+
 .zf-termsContainer .zf-termsMsg {
   border: 1px solid #e1e1e1;
   max-height: 250px;
@@ -1023,18 +1118,22 @@ select {
   padding: 10px;
   margin-bottom: 6px;
 }
+
 .zf-termsContainer .zf-termScrollRemove {
   border: 1px solid #e1e1e1;
   padding: 10px;
   margin-bottom: 6px;
 }
+
 .zf-termsAccept {
   margin-top: 2px !important;
 }
+
 .zf-termsAccept input[type="checkbox"] {
   margin-top: 2px !important;
   float: left;
 }
+
 .zf-termsAccept label {
   margin-left: 20px;
   font-size: 13px;
@@ -1045,6 +1144,7 @@ select {
 .zf-termsWrapper .zf-tempContDiv {
   margin-left: 0 !important;
 }
+
 .zf-termsWrapper .zf-labelName {
   width: 100% !important;
   text-align: left !important;
@@ -1054,60 +1154,76 @@ select {
 .zf-medium .zf-phwrapper {
   width: 75%;
 }
+
 .zf-phwrapper.zf-phNumber span {
   width: 100% !important;
 }
+
 .zf-phwrapper span:first-child {
   margin-left: 0;
   width: 22%;
 }
+
 .zf-phwrapper label {
   display: block;
   color: #888888;
   font-size: 11px;
   margin-top: 2px;
 }
+
 .zf-medium .zf-phonefld input[type="text"],
 .zf-small .zf-phonefld input[type="text"] {
   width: 100%;
 }
+
 .zf-small .zf-phwrapper {
   width: 50%;
 }
+
 .zf-tempFrmWrapper.zf-phone span {
   width: auto;
   margin: inherit;
 }
+
 .zf-phwrapper span {
   margin-bottom: 10px;
   float: left;
   width: 76%;
   margin-left: 2%;
 }
+
 .zf-descFld a {
   text-decoration: underline;
 }
+
 .zf-descFld em {
   font-style: italic;
 }
+
 .zf-descFld b {
   font-weight: bold;
 }
+
 .zf-descFld i {
   font-style: italic;
 }
+
 .zf-descFld u {
   text-decoration: underline;
 }
+
 .zf-descFld ul {
   margin: auto;
 }
+
 .zf-descFld ul {
   list-style: disc;
 }
+
 .zf-descFld ol {
   list-style: decimal;
 }
+
 .zf-descFld ul,
 .zf-descFld ol {
   margin: 10px 0;
@@ -1131,6 +1247,7 @@ select {
   border-left: 3px solid #efefef;
   padding-left: 35px;
 }
+
 .zf-descFld blockquote.zquote span.txt {
   -moz-user-focus: ignore;
   -moz-user-input: disabled;
@@ -1140,58 +1257,98 @@ select {
   font: bold 50px Arial, Helvetica, sans-serif;
   margin: -10px 0 0 -30px;
 }
+
 .zf-descFld blockquote.block_quote {
-  background: url("../images/newQuote.gif") no-repeat scroll 12px 10px
-    rgba(0, 0, 0, 0);
+  background: url("../images/newQuote.gif") no-repeat scroll 12px 10px rgba(0, 0, 0, 0);
   border-left: 3px solid #efefef;
   font: 13px/20px georgia, Arial, verdana, Helvetica, sans-serif;
   margin: 15px 3px 15px 15px;
   padding: 10px 10px 10px 40px;
 }
+
 .zf-descFld body {
   font-family: "Roboto", sans-serif;
   font-size: 13px;
   margin: 8px;
 }
+
 .note .noteCont {
   overflow: hidden;
 }
+
 .note .zf-descFld {
   overflow: hidden;
   font-size: 13px;
 }
+
 .one-line {
   display: flex;
 }
+
 .wid {
   width: 50%;
 }
+
 @media only screen and (max-width: 600px) {
   .one-line {
     flex-direction: column;
   }
+
   .wid {
     width: 100%;
   }
+
   .zf-tempFrmWrapper {
     padding: 0px;
     padding-bottom: 20px;
   }
+
   .zf-subContWrap {
     margin: 20px;
   }
+
   .mess {
     margin: 20px;
   }
+
   .zf-tempContDiv input[type="text"],
   .zf-tempContDiv textarea,
   .zf-tempContDiv .zf-pdfTextArea {
     padding: 16px;
   }
+
   .zf-tempContDiv textarea {
     height: 120px;
   }
+
   body {
     padding: 0px;
+  }
+}
+
+
+#loaderContainer {
+  display: flex;
+  align-items: center;
+}
+
+#loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+  margin-left: 10px;
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }
