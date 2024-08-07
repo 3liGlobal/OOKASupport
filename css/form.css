@@ -200,6 +200,7 @@ ul {
   border-radius: 6px;
   padding: 15px;
   font-size: 13px;
+  width: 100%;
 }
 
 .zf-tempContDiv input[type="text"]:hover,
@@ -208,12 +209,18 @@ ul {
 }
 .zf-tempContDiv input[type="text"]:focus,
 .zf-tempContDiv textarea:focus {
-  border: 1px solid rgba(121, 187, 238, 0.75) !important;
-  -webkit-box-shadow: 0 0 5px rgba(82, 168, 236, 0.5) !important;
+  border: 1px solid rgb(0 0 0 / 75%) !important;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) !important;
   -moz-box-shadow: 0 0 5px rgba(82, 168, 236, 0.5) !important;
-  box-shadow: 0 0 5px rgba(82, 168, 236, 0.5) !important;
+  box-shadow: 0 0 5px rgb(0 4 6 / 50%) !important;
 }
-
+select:focus-visible {
+  outline: none;
+  border: 1px solid rgb(0 0 0 / 75%) !important;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) !important;
+  -moz-box-shadow: 0 0 5px rgba(82, 168, 236, 0.5) !important;
+  box-shadow: 0 0 5px rgb(0 4 6 / 50%) !important;
+}
 .zf-tempContDiv textarea {
   height: 200px;
 }
@@ -686,13 +693,7 @@ ul {
 
 .zf-submitColor:hover {
   background: #1988d6;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#1988d6),
-    to(#1988d6)
-  );
+  background-image: linear-gradient(to right, #6e0f9d, #6a16d4);
   background: -moz-linear-gradient(top, #1988d6, #1988d6);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1988d6', endColorstr='#1988d6');
 }
@@ -1155,4 +1156,19 @@ ul {
 }
 .wid {
   width: 50%;
+}
+@media only screen and (max-width: 600px) {
+  .one-line {
+    flex-direction: column;
+  }
+  .wid {
+    width: 100%;
+  }
+  .zf-tempFrmWrapper {
+    padding: 0px;
+    padding-bottom: 20px;
+  }
+  .zf-subContWrap {
+    margin: 20px;
+  }
 }
