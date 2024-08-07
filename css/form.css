@@ -690,7 +690,7 @@ select:focus-visible {
 
 .zf-submitColor:hover {
   background: #1988d6;
-  background-image: linear-gradient(to right, #6e0f9d, #6a16d4);
+  background-image: linear-gradient(to right, #6e0f9d, #6e0f9d);
   background: -moz-linear-gradient(top, #1988d6, #1988d6);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1988d6', endColorstr='#1988d6');
 }
