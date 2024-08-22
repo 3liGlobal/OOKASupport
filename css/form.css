@@ -250,6 +250,7 @@ select:focus-visible {
 
 .zf-tempContDiv textarea {
   height: 220px;
+  font-family: "brandon-grotesque", sans-serif;
 }
 
 .arrangeAddress .zf-addrCont span.zf-addtwo {
@@ -873,7 +874,11 @@ select {
 }
 
 .zf-leftAlign .zf-namesmall .zf-threeType .zf-salutationWrapper .zf-salutation,
-.zf-rightAlign .zf-namesmall .zf-threeType .zf-salutationWrapper .zf-salutation {
+.zf-rightAlign
+  .zf-namesmall
+  .zf-threeType
+  .zf-salutationWrapper
+  .zf-salutation {
   width: 50%;
 }
 
@@ -1259,7 +1264,8 @@ select {
 }
 
 .zf-descFld blockquote.block_quote {
-  background: url("../images/newQuote.gif") no-repeat scroll 12px 10px rgba(0, 0, 0, 0);
+  background: url("../images/newQuote.gif") no-repeat scroll 12px 10px
+    rgba(0, 0, 0, 0);
   border-left: 3px solid #efefef;
   font: 13px/20px georgia, Arial, verdana, Helvetica, sans-serif;
   margin: 15px 3px 15px 15px;
@@ -1325,7 +1331,6 @@ select {
     padding: 0px;
   }
 }
-
 
 #loaderContainer {
   display: flex;
