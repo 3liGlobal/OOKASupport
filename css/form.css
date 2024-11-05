@@ -1345,6 +1345,7 @@ select {
   height: 20px;
   animation: spin 2s linear infinite;
   margin-left: 10px;
+  display: none;
 }
 
 @keyframes spin {
