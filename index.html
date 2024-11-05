@@ -361,9 +361,10 @@
       var salesIQFieldsArray = [];
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script>
-    var email = event.data;
+  <!-- <script>
     window.addEventListener('message', function (event) {
+      var email = event.data;
+      console.log(email);
       document.getElementById('Email').value = email;
       document.getElementById("Email").readOnly = true;
       let checkField = setInterval(function () {
@@ -374,6 +375,6 @@
       }, 100);
       $('#loader').hide();
     });
-  </script>
+  </script> -->
   </body>
 </html>
