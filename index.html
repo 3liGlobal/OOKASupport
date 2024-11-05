@@ -364,6 +364,7 @@
   <script>
     window.addEventListener('message', function (event) {
       var email = event.data;
+      console.log(email);
       document.getElementById('Email').value = email;
       document.getElementById("Email").readOnly = true;
       let checkField = setInterval(function () {
