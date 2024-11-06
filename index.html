@@ -356,12 +356,9 @@
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script>
-    var em;
     window.addEventListener('message', function (event) {
-            if (event.data) {
-                 em = event.data; 
-            }
-      var email = em;
+      var email = event.data;
+      console.log(email);
       document.getElementById('Email').value = email;
       document.getElementById("Email").readOnly = true;
       let checkField = setInterval(function () {
