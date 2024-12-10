@@ -261,51 +261,18 @@
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script>
-    // Listen for messages sent to the window
     window.addEventListener('message', function (event) {
       var email = event.data;
-
-      // Check if the email field exists immediately
-      let emailField = document.getElementById("Email");
-      if (!emailField) {
-        console.warn("Email field not found. Waiting for it to load...");
-
-        // Retry finding the email field periodically until it's available
-        let retryInterval = setInterval(function () {
-          emailField = document.getElementById("Email");
-          if (emailField) {
-            console.log("Email field found.");
-            clearInterval(retryInterval); // Stop retrying
-            updateEmailField(email); // Update the field
-          }
-        }, 100); // Check every 100ms
-        return;
-      }
-
-      // Update the field if it exists
-      updateEmailField(email);
-    });
-
-    // Function to update the email field and hide the loader
-    function updateEmailField(email) {
-      const emailField = document.getElementById("Email");
-      if (emailField) {
-        emailField.value = email; // Set the email
-        emailField.readOnly = true; // Make it read-only
-        console.log("Email field updated with:", email);
-
-        // Hide the loader once the field is populated
-        let loader = document.getElementById("loader");
-        if (loader) {
-          loader.style.display = "none";
-          console.log("Loader hidden.");
-        } else {
-          console.warn("Loader element not found.");
+      document.getElementById("Email").value = email;
+      document.getElementById("Email").readOnly = true;
+      let checkField = setInterval(function () {
+        if ($('#Email').val() !== '') {
+          $('#loader').hide();
+          clearInterval(checkField);
         }
-      } else {
-        console.error("Email field still not found.");
-      }
-    }
+      }, 100);
+      $('#loader').hide();
+    });
   </script>
 </body>
 
