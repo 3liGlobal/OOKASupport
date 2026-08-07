@@ -248,6 +248,22 @@ select:focus-visible {
   box-shadow: 0 0 5px rgb(0 4 6 / 50%) !important;
 }
 
+.ticket-id-wrapper {
+  display: none;
+}
+
+.ticket-id-wrapper.is-visible {
+  display: block;
+}
+
+.ticket-id-required {
+  display: none;
+}
+
+.ticket-id-wrapper.is-visible .ticket-id-required {
+  display: inline;
+}
+
 .zf-tempContDiv textarea {
   height: 220px;
   font-family: "brandon-grotesque", sans-serif;

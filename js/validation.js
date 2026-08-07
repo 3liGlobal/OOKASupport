@@ -13,6 +13,46 @@ function zf_ValidateAndSubmit() {
     return false;
   }
 }
+function zf_ToggleTicketIdField() {
+  var reasonSelect = document.getElementById("contactReason");
+  var ticketWrapper = document.getElementById("ticketIdWrapper");
+  var ticketInput = document.getElementById("ticketIdInput");
+  var requiredMarker = document.getElementById("ticketIdRequired");
+  var isFollowUp = reasonSelect && reasonSelect.value === "Follow Up";
+
+  if (!ticketWrapper || !ticketInput) {
+    return;
+  }
+
+  ticketWrapper.classList.toggle("is-visible", isFollowUp);
+  ticketInput.disabled = !isFollowUp;
+  if (!isFollowUp) {
+    ticketInput.value = "";
+  }
+  if (requiredMarker) {
+    requiredMarker.style.display = isFollowUp ? "inline" : "none";
+  }
+
+  var mandIndex = zf_MandArray.indexOf("SingleLine");
+  if (isFollowUp) {
+    if (mandIndex === -1) {
+      zf_MandArray.push("SingleLine");
+    }
+  } else if (mandIndex !== -1) {
+    zf_MandArray.splice(mandIndex, 1);
+  }
+}
+
+if (document.addEventListener) {
+  document.addEventListener("DOMContentLoaded", function () {
+    zf_ToggleTicketIdField();
+    var reasonSelect = document.getElementById("contactReason");
+    if (reasonSelect) {
+      reasonSelect.addEventListener("change", zf_ToggleTicketIdField);
+    }
+  });
+}
+
 function zf_CheckMandatory() {
   for (i = 0; i < zf_MandArray.length; i++) {
     var fieldObj = document.forms.form[zf_MandArray[i]];

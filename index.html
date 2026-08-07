@@ -105,67 +105,43 @@
                   Reason for contacting us
                   <em class="zf-important">*</em></label>
                 <div class="zf-tempContDiv">
-                  <select class="zf-form-sBox" name="Dropdown" checktype="c1">
-                    <option selected="true" value="-Select-">Select</option>
-                    <optgroup label="My Order">
-                      <option value="Oder&#x20;Status">
-                        Order&#x20;Status
-                      </option>
-                      <option value="Return">Return</option>
-                      <option value="Repair&#x20;Service">
-                        Repair&#x20;Service
-                      </option>
-                      <option value="Delivery">Delivery</option>
-                      <option value="Warranty&#x20;Registration">
-                        Warranty&#x20;Registration
-                      </option>
-                    </optgroup>
-                    <optgroup label="Account Help">
-                      <option value="Update&#x20;Account&#x20;Information">
-                        Update&#x20;Account&#x20;Information
-                      </option>
-                      <option value="Forgot&#x20;Password">
-                        Forgot&#x20;Password
-                      </option>
-                      <option value="Other&#x20;Login&#x20;Issue">
-                        Other&#x20;Login&#x20;Issue
-                      </option>
-                      <option value="Login&#x20;Issue">
-                        Login&#x20;Issue
-                      </option>
-                    </optgroup>
-                    <optgroup label="Website Support">
-                      <option value="Promo&#x20;Code&#x20;Issue">
-                        Promo&#x20;Code&#x20;Issue
-                      </option>
-                      <option value="Website&#x20;Issue">
-                        Website&#x20;Issue
-                      </option>
-                      <option value="Other">Other</option>
-                    </optgroup>
-                    <optgroup label="Wholesale Inquiry">
-                      <option value="Wholesale&#x20;Account&#x20;Information">
-                        Wholesale&#x20;Account&#x20;Information
-                      </option>
-                    </optgroup>
-                    <optgroup label="General Inquiries">
-                      <option value="Product&#x20;Assembly">
-                        Product&#x20;Assembly
-                      </option>
-                      <option value="Affiliate&#x20;Information&#x20;Request">
-                        Affiliate&#x20;Information&#x20;Request
-                      </option>
-                      <option value="Marketing&#x20;Inquiry">
-                        Marketing&#x20;Inquiry
-                      </option>
-                      <option value="Product&#x20;Request">
-                        Product&#x20;Request
-                      </option>
-                      <option value="Vendor&#x20;Inquiry">
-                        Vendor&#x20;Inquiry
-                      </option>
-                      <option value="Other">Other</option>
-                    </optgroup>
+                  <select class="zf-form-sBox" id="contactReason" name="Dropdown" checktype="c1">
+                    <option selected="true" value="-Select-">-Select-</option>
+                                    <optgroup label="My Order">
+                                        <option value="Order Status">Order Status</option>
+                                        <option value="Follow Up">Follow Up</option>
+                                        <option value="PAE (Potential Adverse Events)">PAE (Potential Adverse Events)
+                                        </option>
+                                        <option value="Return">Return</option>
+                                        <option value="Repair Service">Repair Service</option>
+                                        <option value="Payment inquiries">Payment inquiries</option>
+                                        <option value="Delivery">Delivery</option>
+                                        <option value="Warranty Registration">Warranty Registration</option>
+                                    </optgroup>
+                                    <optgroup label="Account Help">
+                                        <option value="Update Account Information">Update Account Information</option>
+                                        <option value="Forgot Password">Forgot Password</option>
+                                        <option value="Other Login Issue">Other Login Issue</option>
+                                        <option value="Login Issue">Login Issue</option>
+                                    </optgroup>
+                                    <optgroup label="Website Support">
+                                        <option value="Promo Code Issue">Promo Code Issue</option>
+                                        <option value="Website Issue">Website Issue</option>
+                                        <option value="Other">Other</option>
+                                    </optgroup>
+                                    <optgroup label="Wholesale Inquiry">
+                                        <option value="Wholesale Account Information">Wholesale Account Information
+                                        </option>
+                                    </optgroup>
+                                    <optgroup label="General Inquiries">
+                                        <option value="Product Assembly">Product Assembly</option>
+                                        <option value="Affiliate Information Request">Affiliate Information Request
+                                        </option>
+                                        <option value="Marketing Inquiry">Marketing Inquiry</option>
+                                        <option value="Product Request">Product Request</option>
+                                        <option value="Vendor Inquiry">Vendor Inquiry</option>
+                                        <option value="Other">Other</option>
+                                    </optgroup>
                   </select>
                   <p id="Dropdown_error" class="zf-errorMessage" style="display: none">
                     Invalid value
@@ -201,6 +177,21 @@
                     placeholder="" /></span>
                 <p id="SingleLine2_error" class="zf-errorMessage" style="display: none">
                   Invalid value
+                </p>
+              </div>
+              <div class="zf-clearBoth"></div>
+            </li>
+            <li class="zf-tempFrmWrapper zf-large ticket-id-wrapper" id="ticketIdWrapper">
+              <label class="zf-labelName" id="ticketIdLabel">
+                Ticket ID
+                <em class="zf-important ticket-id-required" id="ticketIdRequired">*</em>
+              </label>
+              <div class="zf-tempContDiv">
+                <span>
+                  <input type="text" name="SingleLine" id="ticketIdInput" checktype="c1" value="" maxlength="255"
+                    fieldType="1" placeholder="" disabled />
+                </span>
+                <p id="SingleLine_error" class="zf-errorMessage" style="display: none;">Invalid value
                 </p>
               </div>
               <div class="zf-clearBoth"></div>
