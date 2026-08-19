@@ -165,6 +165,14 @@ function zf_ValidCheck() {
         } else if (checkType == "c8") {
           // No I18N
           zf_ValidateSignature(fieldObj);
+        } else if (checkType == "c9") {
+          // No I18N
+          if (!zf_ValidateTicketId(fieldObj)) {
+            isValid = false;
+            fieldObj.focus();
+            zf_ShowErrorMsg(zf_FieldArray[ind]);
+            return false;
+          }
         }
       }
     }
@@ -202,6 +210,14 @@ function zf_ValidateNumber(elem) {
   } else {
     return true;
   }
+}
+function zf_ValidateTicketId(elem) {
+  var value = elem.value.replace(/^\s+|\s+$/g, "");
+  elem.value = value;
+  if (value == "") {
+    return true;
+  }
+  return /^[0-9]+$/.test(value);
 }
 function zf_ValidateDateFormat(inpElem) {
   var dateValue = inpElem.value.replace(/^\s+|\s+$/g, "");

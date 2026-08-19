@@ -188,10 +188,11 @@
               </label>
               <div class="zf-tempContDiv">
                 <span>
-                  <input type="text" name="SingleLine" id="ticketIdInput" checktype="c1" value="" maxlength="255"
-                    fieldType="1" placeholder="" disabled />
+                  <input type="text" name="SingleLine" id="ticketIdInput" checktype="c9" value="" maxlength="20"
+                    fieldType="1" placeholder="Enter Ticket ID" inputmode="numeric" pattern="[0-9]*"
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '');" disabled />
                 </span>
-                <p id="SingleLine_error" class="zf-errorMessage" style="display: none;">Invalid value
+                <p id="SingleLine_error" class="zf-errorMessage" style="display: none;">Please enter a valid Ticket ID (numbers only)
                 </p>
               </div>
               <div class="zf-clearBoth"></div>
@@ -245,6 +246,7 @@
       "PhoneNumber_countrycode",
       "Dropdown",
       "SingleLine2",
+      "SingleLine",
       "MultiLine",
     ];
     var isSalesIQIntegrationEnabled = false;
