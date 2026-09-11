@@ -363,7 +363,8 @@ select:focus-visible {
 
 .zf-form-sBox {
   font-family: "brandon-grotesque", sans-serif;
-  padding: 15px;
+  padding: 18px;
+  padding-right: 36px;
   border: 1px solid #bdbcbb;
   font-size: 13px;
   border-radius: 6px;
@@ -1335,8 +1336,10 @@ select {
 
   .zf-tempContDiv input[type="text"],
   .zf-tempContDiv textarea,
-  .zf-tempContDiv .zf-pdfTextArea {
+  .zf-tempContDiv .zf-pdfTextArea,
+  .zf-tempContDiv .zf-form-sBox {
     padding: 16px;
+    padding-right: 36px;
   }
 
   .zf-tempContDiv textarea {
